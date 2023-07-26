@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.photo {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Optional: Add some styling to make it look nicer */
+body {
+    background-color: #f2f2f2;
+}
+
+.photo:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
